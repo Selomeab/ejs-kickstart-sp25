@@ -53,6 +53,11 @@ app.get('/users/view/:id', function(req, res) {
  });
 });
 
+//All of our recipe routes are now here
+const recipeRoutes = require('./routes/recipes');
+app.use('/recipes', recipeRoutes);
+
+
 
 //Set server to listen for requests
 app.listen(port, () => {
