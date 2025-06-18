@@ -49,6 +49,11 @@ app.get('/about',(req,res)=>{
     res.render('pages/about',{'title': title});
 });
 
+app.get('/beyonce',(req,res)=>{
+    let title = "Beyonce Page";
+    res.render('pages/beyonce',{'title': title});
+});
+
 //users route 
 app.get('/users',(req,res)=>{
     let title = "Users Page";
